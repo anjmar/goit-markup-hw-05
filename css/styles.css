@@ -159,6 +159,7 @@ p {
 .auth-icon {
   margin-right: 10px;
   fill: currentColor;
+  transition: color var(--trns-fast);
 }
 .auth-social-link:hover,
 .auth-social-link:focus {
@@ -424,11 +425,11 @@ img {
   color: #afb1b8;
   border-radius: 50%;
   background-color: transparent;
-  /* transition:  background-color var(--trns-fast); */
+  transition: background-color var(--trns-fast);
 }
 .socials-icon {
   fill: currentColor;
-  transition: background-color var(--trns-fast);
+  transition: fill var(--trns-fast);
 }
 .socials-link:hover,
 .socials-link:focus {
