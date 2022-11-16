@@ -424,10 +424,11 @@ img {
   color: #afb1b8;
   border-radius: 50%;
   background-color: transparent;
-  transition: color var(--trns-fast, background-color var(--trns-fast));
+  /* transition:  background-color var(--trns-fast); */
 }
 .socials-icon {
   fill: currentColor;
+  transition: background-color var(--trns-fast);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -526,6 +527,7 @@ img {
   align-items: flex-start;
 }
 .icon-dark-bg {
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-subtitle {
@@ -592,23 +594,20 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 .proposition-link {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: box-shadow var(--trns-fast);
+  overflow: hidden;
 }
-.proposition-link:hover,
-.proposition-link:focus {
+.proposition-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.proposition-item {
-  position: relative;
-  overflow: hidden;
-  transition: transform var(--trns-fast);
-}
-.proposition-item:hover .proposition-overlay {
+.proposition-link:hover .proposition-overlay {
   transform: translateY(0);
 }
 .proposition-overlay {
@@ -645,6 +644,7 @@ img {
   border-top: 0;
   background-color: var(--primary-background-color);
 }
+
 .proposition-title {
   margin-left: 24px;
   margin-right: 24px;
